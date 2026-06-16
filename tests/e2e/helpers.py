@@ -19,7 +19,7 @@ from selenium.webdriver.support import expected_conditions as EC
 # ---------------------------------------------------------------------------
 BASE_URL = os.environ.get(
     "SMARTBIZ_BASE_URL",
-    "https://thegitguy-56.github.io/Smartbiz-frontend/",
+    "https://nvsandeep-1923.github.io/Smartbiz-frontend/",
 )
 API_URL = os.environ.get(
     "SMARTBIZ_API_URL",

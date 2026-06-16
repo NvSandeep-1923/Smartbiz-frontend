@@ -56,7 +56,7 @@ jobs:
       - name: Run E2E Tests
         working-directory: tests/e2e
         env:
-          SMARTBIZ_BASE_URL: "https://thegitguy-56.github.io/Smartbiz-frontend/"
+          SMARTBIZ_BASE_URL: "https://nvsandeep-1923.github.io/Smartbiz-frontend/"
           SMARTBIZ_API_URL: "https://smartbiz-backend-c7ru.onrender.com/api"
         run: |
           pytest . -v \
