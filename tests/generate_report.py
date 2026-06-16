@@ -56,6 +56,9 @@ CATEGORY_MAP = {
     "test_10_settings": "Settings",
     "test_11_navigation": "Navigation & Routing",
     "test_12_security": "Security & Vulnerability",
+    "api.test_auth": "API - Authentication",
+    "api.test_inventory": "API - Inventory",
+    "api.test_customers": "API - Customers",
 }
 
 

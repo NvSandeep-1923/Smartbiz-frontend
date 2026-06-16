@@ -79,18 +79,18 @@ jobs:
           pip install -r tests/requirements.txt
 
       # ------------------------------------------------------------------
-      # 5. Run Selenium E2E Tests
+      # 5. Run Selenium E2E Tests & API Tests
       # ------------------------------------------------------------------
-      - name: Run E2E Tests
-        working-directory: tests/e2e
+      - name: Run E2E and API Tests
+        working-directory: tests
         env:
           SMARTBIZ_BASE_URL: "https://nvsandeep-1923.github.io/Smartbiz-frontend/"
           SMARTBIZ_API_URL: "https://smartbiz-backend-c7ru.onrender.com/api"
         run: |
-          pytest . -v \
+          pytest e2e/ api/ -v \
             -n auto \
             --tb=short \
-            --junitxml=../results.xml \
+            --junitxml=results.xml \
             --timeout=120 \
             -x --maxfail=50 \
             || true
