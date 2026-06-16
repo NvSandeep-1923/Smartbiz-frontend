@@ -60,6 +60,7 @@ jobs:
           SMARTBIZ_API_URL: "https://smartbiz-backend-c7ru.onrender.com/api"
         run: |
           pytest . -v \
+            -n auto \
             --tb=short \
             --junitxml=../results.xml \
             --timeout=120 \
